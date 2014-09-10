@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="45dip"
+        android:background="@drawable/rectangle_roundcorner_background"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="@string/RegisterPhone"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="@color/DividerColor" />
+        
+
+        <EditText
+            android:id="@+id/AccoutPhone"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/RegisterHintUserPhone"
+            android:inputType="phone"
+            android:padding="10dip"
+            android:textSize="16sp" />
+        
+        <ImageView 
+            android:id="@+id/clear_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/clear_test"/>
+        
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/GetVerifyCode"
+        style="@style/BaseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dip"
+        android:layout_marginRight="25dip"
+        android:text="@string/RegisterPhoneCode"
+        android:enabled="false"
+        android:textSize="14sp" />
+
+</LinearLayout>

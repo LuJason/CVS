@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="BaseColor">#D75022</color>
+    
+    <color name="DividerColor">#e3e3e3</color>
+    
+    <color name="AccountMoney">#ff0202</color>
+    <color name="AccountText">#464646</color>
+    <!-- <color name="AccountName">#686868</color> -->
+    
+    <color name="MoneyText">#D75022</color>
+    
+    <color name="Background">#e8e8e8</color>
+    
+    <color name="TabTextWhite">#fcfcfc</color>
+    <color name="TabTextRed">#ff855e</color>
+    <color name="TabBackgroundNormal">#666666</color>
+    <color name="TabBackgroundSelected">#323232</color>
+    
+</resources>

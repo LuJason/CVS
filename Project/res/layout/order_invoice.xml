@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/SettleAccountTitle"
+        android:text="发票信息" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dip"
+        android:background="#ffffff"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/TypeMark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/SettleAccountItem"
+            android:text="发票类型：" />
+
+        <TextView
+            android:id="@+id/Type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/TypeMark"
+            android:layout_toRightOf="@+id/TypeMark"
+            style="@style/SettleAccountItem"
+            android:text="普通发票" />
+
+        <TextView
+            android:id="@+id/HeadMark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TypeMark"
+            style="@style/SettleAccountItem"
+            android:text="发票抬头：" />
+
+        <TextView
+            android:id="@+id/Header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/HeadMark"
+            android:layout_toRightOf="@+id/HeadMark"
+            style="@style/SettleAccountItem"
+            android:text="个人" />
+    </RelativeLayout>
+
+</LinearLayout>

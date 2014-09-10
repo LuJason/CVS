@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/SettleAccountTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/SettleAddressTitle" />
+
+    <TextView
+        android:id="@+id/NoAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/SettleAddNewAddress"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/AddressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dip"
+        android:background="#ffffff"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/NameMark"
+            style="@style/SettleAccountItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/SettleName" />
+
+        <TextView
+            android:id="@+id/Name"
+            style="@style/SettleAccountItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/NameMark"
+            android:layout_toRightOf="@+id/NameMark" />
+
+        <TextView
+            android:id="@+id/PhoneMark"
+            style="@style/SettleAccountItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/NameMark"
+            android:text="@string/SettlePhone" />
+
+        <TextView
+            android:id="@+id/Phone"
+            style="@style/SettleAccountItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/PhoneMark"
+            android:layout_toRightOf="@+id/PhoneMark" />
+
+        <TextView
+            android:id="@+id/AddressMark"
+            style="@style/SettleAccountItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PhoneMark"
+            android:text="@string/SettleAddress" />
+
+        <TextView
+            android:id="@+id/Address"
+            style="@style/SettleAccountItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/AddressMark"
+            android:layout_toRightOf="@+id/AddressMark" />
+    </RelativeLayout>
+
+</LinearLayout>
