@@ -1,33 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
-    
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="120dip" >
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
 
-        <android.support.v4.view.ViewPager
-            android:id="@+id/advertisements"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-        </android.support.v4.view.ViewPager>
+            android:layout_height="120dip" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/advertisements"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </android.support.v4.view.ViewPager>
+
+            <LinearLayout
+                android:id="@+id/dotcontainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" />
+        </RelativeLayout>
 
         <LinearLayout
-            android:id="@+id/dotcontainer"
-            android:layout_width="match_parent"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:gravity="center_horizontal"
-            android:orientation="horizontal" />
-    </RelativeLayout>
-    
-    <TextView 
-        android:layout_height="match_parent"
-        android:layout_width="wrap_content"
-        android:gravity="center"
-        android:text="首页"/>
-    
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip" >
 
-</LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/category_ico_1"
+                android:gravity="center_horizontal"
+                android:text="便利店" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/category_ico_2"
+                android:gravity="center_horizontal"
+                android:text="连锁店" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/category_ico_3"
+                android:gravity="center_horizontal"
+                android:text="商场大超" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/category_ico_4"
+                android:gravity="center_horizontal"
+                android:text="社区便利" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

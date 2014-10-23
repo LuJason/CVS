@@ -3,14 +3,11 @@ package com.yu.cvs.adapters;
 
 import com.yu.cvs.R;
 import com.yu.cvs.classes.BaseCart;
-import com.yu.cvs.classes.Cart;
 import com.yu.cvs.classes.Good;
 import com.yu.cvs.dialog.AdjustQuantityDialog;
 import com.yu.cvs.shop.CartFragment;
 
-import android.app.Dialog;
 import android.content.Context;
-import android.database.DataSetObserver;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,7 +17,6 @@ import android.widget.BaseAdapter;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -42,7 +38,7 @@ public class CartGoodsListAdapter extends BaseAdapter implements OnClickListener
 		
 	}
 	
-	public void setNetCart(BaseCart cart){
+	public void setNewCart(BaseCart cart){
 		
 		Log.d(TAG, "register CartGoodsListAdapter self to new Cart");
 		

@@ -57,14 +57,14 @@ public class UploadCacheCartTask extends AsyncTask<JSONObject, Integer, JSONObje
 				param.put("product_id", g.getProductId());
 				param.put("count", g.getCount());
 
-				request.put("cmd", "user_login");
+				request.put("cmd", "user_cart_add");
 				request.put("status", 0);
 				request.put("seq", 1234);
 				request.put("mac", "123456");
 				request.put("param", param);
 
 				HttpConnection conn = HttpConnection.CreateHttpConnection();
-				HttpResponse r = conn.sendRequestInPost(ProtocolDefinition.COMMANDURL, String.format("q=%s", param.toString()), "", null);
+				HttpResponse r = conn.sendRequestInPost(ProtocolDefinition.COMMANDURL, String.format("q=%s", request.toString()), "", null);
 
 				System.out.println(String.format("q=%s", param.toString()));
 				System.out.println(r.content);
@@ -107,7 +107,7 @@ public class UploadCacheCartTask extends AsyncTask<JSONObject, Integer, JSONObje
 		try {
 			query.put("cmd", "user_cart_qry");
 			query.put("status", 0);
-			query.put("seq", 1234);
+			query.put("seq", TaskHelper.GenerageSequence(this.mApp));
 			query.put("mac", "123456");
 
 			JSONObject param = new JSONObject();

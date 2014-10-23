@@ -62,7 +62,7 @@ public class NetworkTask extends AsyncTask<JSONObject, Integer, JSONObject> {
 		while(time > 0){
 			
 			HttpConnection conn = HttpConnection.CreateHttpConnection();
-			System.out.println(param.toString());
+			System.out.println(request.toString());
 			r = conn.sendRequestInPost(ProtocolDefinition.COMMANDURL, String.format("q=%s",request.toString()), "", null);
 			System.out.println(r.content);
 			

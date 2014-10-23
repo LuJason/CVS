@@ -166,7 +166,10 @@ public abstract class BaseCart {
 		
 		try {
 			for (Good g : _goodsList) {
-				selected.add((Good) g.clone());
+				
+				if(g.isSelected())
+					selected.add((Good) g.clone());
+				
 			}
 		} catch (CloneNotSupportedException e) {
 			// TODO Auto-generated catch block

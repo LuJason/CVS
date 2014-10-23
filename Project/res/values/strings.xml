@@ -29,7 +29,7 @@
     <string name="save">保存</string>
     <string name="search">搜索</string>
     <string name="search_hint">输入关键字</string>
-    <string name="search_commodity">商品</string>
+    <string name="search_commodity">搜索商品</string>
     <string name="search_shop">店铺</string>
 
     <string-array name="good_category">

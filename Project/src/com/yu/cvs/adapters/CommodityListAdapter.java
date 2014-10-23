@@ -41,6 +41,12 @@ public class CommodityListAdapter extends BaseAdapter {
 		// TODO Auto-generated method stub
 		return _commodities.get(position);
 	}
+	
+	public void addItemSet(ArrayList<Commodity> cache) {
+		// TODO Auto-generated method stub
+		_commodities.addAll(_commodities.size(), cache);
+		notifyDataSetChanged();
+	}
 
 	@Override
 	public long getItemId(int position) {
@@ -72,14 +78,11 @@ public class CommodityListAdapter extends BaseAdapter {
 		ViewHolder holder = (ViewHolder) view.getTag();
 		
 		Commodity c = _commodities.get(position);
-//		holder._desc.setText(c.getBrief());
-//		holder._price.setText(String.format("%f ￥", (float)c.getRefPrice()/100));
-//		holder._shop.setText(c.getMerch_id());
-//		holder._distance.setText(c.getDistance());
 		
-		
-		
-		
+		holder._desc.setText(c.getName());
+		holder._price.setText(String.format("%.2f ￥", (float)c.getPrice()/100));
+		holder._shop.setText(c.getMerchName());
+		holder._distance.setText(String.format("%s m", c.getDistance()));
 		
 		return view;
 	}

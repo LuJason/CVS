@@ -8,11 +8,13 @@
         android:id="@+id/CommodityImg"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:padding="5dip"
         android:src="@drawable/ic_launcher" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:padding="5dip"
         android:orientation="vertical" >
 
         <TextView
@@ -20,8 +22,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dip"
-            android:text="鲜引力即食柠檬片/干16g*5 \n水果片 蜜钱休闲食品"
+            android:text="鲜引力即食柠檬片/干16g*5 水果片 蜜钱休闲食品"
             android:textColor="#1e1e1e"
+            android:lineSpacingExtra="2dip"
             android:textSize="18sp" />
 
         <TextView
@@ -32,7 +35,7 @@
             android:padding="3dip"
             android:text="28.8 ￥"
             android:textColor="#e04010"
-            android:textSize="16sp" />
+            android:textSize="17sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -43,11 +46,11 @@
                 android:id="@+id/shop"
                 android:layout_width="0dip"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:lines="2"
                 android:text="早晚八点半便利连锁店（好友北路店）"
                 android:textColor="#555555"
-                android:textSize="12sp" />
+                android:textSize="14sp" />
 
             <LinearLayout
                 android:layout_width="0dip"
@@ -63,6 +66,7 @@
                     android:drawablePadding="5dip"
                     android:gravity="center"
                     android:text="150m"
+                    android:textSize="14sp"
                     android:textColor="#ff9a02" />
             </LinearLayout>
         </LinearLayout>

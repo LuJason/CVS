@@ -185,19 +185,6 @@ public class AccountLoginFragment extends Fragment implements TextWatcher, OnCli
 		// userid 用户名，邮箱，手机
 		// userpwd 用户密码md5、32位
 
-		JSONObject param = new JSONObject();
-
-		try {
-
-			param.put("userid", mAccoutId.getText().toString());
-			param.put("userpwd", getMD5(mAccountPwd.getText().toString()));
-
-
-		} catch (JSONException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
 		NetworkTask task = new NetworkTask((CApplication) getActivity().getApplication(), "user_login", false){
 			
 			@Override
@@ -262,6 +249,18 @@ public class AccountLoginFragment extends Fragment implements TextWatcher, OnCli
 			
 		};
 
+		JSONObject param = new JSONObject();
+
+		try {
+
+			param.put("userid", mAccoutId.getText().toString());
+			param.put("userpwd", getMD5(mAccountPwd.getText().toString()));
+
+
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		AsyncTask<JSONObject, Integer, JSONObject> t = task.execute(param);
 
@@ -271,19 +270,18 @@ public class AccountLoginFragment extends Fragment implements TextWatcher, OnCli
 		// TODO Auto-generated method stub
 		
 		AlertDialog.Builder builder = new Builder(getActivity());
-		
+
 		builder.setTitle(R.string.login)
 				.setMessage(R.string.login_error)
-				.setPositiveButton(R.string.confirm, new DialogInterface.OnClickListener() {
-					
-					@Override
-					public void onClick(DialogInterface dialog, int which) {
-						// TODO Auto-generated method stub
-						checkLoginButton();
-					}
-				})
-				.create()
-				.show();
+				.setPositiveButton(R.string.confirm,
+						new DialogInterface.OnClickListener() {
+
+							@Override
+							public void onClick(DialogInterface dialog,	int which) {
+								// TODO Auto-generated method stub
+								checkLoginButton();
+							}
+						}).create().show();
 		
 	}
 

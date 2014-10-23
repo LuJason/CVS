@@ -32,7 +32,4 @@ public class CShopListFragment extends Fragment {
 		return super.onCreateView(inflater, container, savedInstanceState);
 	}
 	
-	
-	
-
 }

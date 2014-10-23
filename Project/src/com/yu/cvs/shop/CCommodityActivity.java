@@ -15,7 +15,6 @@ public class CCommodityActivity extends ActionBarActivity implements
 		CCommodityNavigationDrawerFragment.NavigationDrawerCallbacks {
 
 	private static final String ListTag = "list";
-	private static final String InfoTag = "info";
 
 	private CCommodityNavigationDrawerFragment mNavigationDrawerFragment;
 	
@@ -38,9 +37,14 @@ public class CCommodityActivity extends ActionBarActivity implements
 		mTitle = getString(R.string.search_commodity);
 
 		String action = getIntent().getAction();
+		
 
 		Fragment f = createFragment(ListTag);
 		f.setArguments(new Bundle());
+
+		
+		
+		
 		getSupportFragmentManager().beginTransaction().replace(R.id.container, f, ListTag).commit();
 
 	}
@@ -53,12 +57,6 @@ public class CCommodityActivity extends ActionBarActivity implements
 			f = Fragment.instantiate(this,
 					CCommodityListFragment.class.getName());
 		}
-
-		if (InfoTag.equals(tag)) {
-			f = Fragment.instantiate(this,
-					CCommodityInfoFragment.class.getName());
-		}
-
 
 		return f;
 	}

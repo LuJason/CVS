@@ -175,7 +175,7 @@ public class CartFragment extends Fragment  implements TotalPriceCalculateListen
 				
 				mCart = ((BaseFragmentActivity)getActivity()).getAccount().getCart();
 				
-				mAdapter.setNetCart(mCart);
+				mAdapter.setNewCart(mCart);
 				
 				mCart.notifyGoodsListChanged();
 				

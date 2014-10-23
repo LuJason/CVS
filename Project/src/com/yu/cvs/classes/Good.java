@@ -62,6 +62,17 @@ public class Good implements Cloneable{
 		
 		return true;
 	}
+	
+	public boolean initialize(ProductInfo info){
+		
+		product_id = new String(info.getPid());
+//		product_name = new String(info.get)
+		
+		
+		
+		
+		return true;
+	}
 
 	public String getProductId() {
 		return product_id;
@@ -150,6 +161,30 @@ public class Good implements Cloneable{
 		g.store_count = this.store_count;
 		
 		return g;
+	}
+
+	public static Good InstancFromProductInfo(ProductInfo p, Commodity c, int q) {
+		// TODO Auto-generated method stub
+		
+		Good g = new Good();
+
+		if (g.initialize(p)) {
+			g.barcode = c.getBarcode();
+			g.count = q;
+			// g.logo_url = c.getProduct_logos();
+			g.merch_id = c.getMerchId();
+			g.merch_name = c.getMerchName();
+			g.price = c.getPrice();
+			g.product_id = p.getPid();
+			g.product_name = c.getName();
+			g.ref_price = c.getRef_price();
+			g.selected = true;
+			g.store_count = c.getCount();
+			return g;
+		} else {
+			return null;
+		}
+
 	}
 	
 	
