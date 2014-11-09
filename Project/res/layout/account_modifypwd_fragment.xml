@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/rectangle_roundcorner_background"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="@string/ModifyPwdOldpwd"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="@color/DividerColor" />
+
+        <EditText
+            android:id="@+id/ModifyOldpwd"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/ModifyHintInputOldpwd"
+            android:inputType="textPassword"
+            android:padding="10dip"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/clear_old_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/clear_test" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/rectangle_roundcorner_background"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="@string/ModifyPwdNewpwd"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="@color/DividerColor" />
+
+        <EditText
+            android:id="@+id/ModifyNewpwd"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/ModifyHintInputNewpwd"
+            android:inputType="textPassword"
+            android:padding="10dip"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/clear_new_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/clear_test" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/rectangle_roundcorner_background"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="@string/ModifyConfirmpwd"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="@color/DividerColor" />
+
+        <EditText
+            android:id="@+id/ModifyConfirmpwd"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/ModifyHintInputConfirmpwd"
+            android:inputType="textPassword"
+            android:padding="10dip"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/clear_confirm_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/clear_test" />
+        
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ModifyPwd"
+        style="@style/BaseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dip"
+        android:layout_marginRight="25dip"
+        android:enabled="false"
+        android:text="@string/confirm" />
+
+</LinearLayout>

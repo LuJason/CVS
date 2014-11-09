@@ -1,4 +1,4 @@
-package com.yu.cvs.classes;
+package com.yu.cvs.myview;
 
 import com.yu.cvs.R;
 

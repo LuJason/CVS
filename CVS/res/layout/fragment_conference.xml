@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="3dip"
+        android:gravity="center_vertical" >
+        
+        <TextView 
+            android:id="@+id/SearchCatetory"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/search_commodity"
+            android:layout_margin="3dip"
+            android:gravity="center"
+            android:drawableRight="@drawable/down_arrow"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/SearchKeyWords"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="3dip"
+            android:padding="5dip"
+            android:background="@drawable/search_text_bg"
+            android:hint="@string/search_hint"
+            android:textSize="15sp" />
+        
+        <ImageButton
+            android:id="@+id/Search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dip"
+            android:background="@drawable/search_32" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/categoryTop"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
+
+</LinearLayout>

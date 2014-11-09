@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:orientation="vertical" 
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/AddressAddItemTitle"
+                android:layout_height="wrap_content"
+                android:text="@string/AddressName" />
+
+            <EditText
+                android:id="@+id/AddressName"
+                style="@style/AddressAddItemContent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/HintName"
+                android:inputType="text" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:background="#ffffff"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/AddressAddItemTitle"
+                android:layout_height="wrap_content"
+                android:text="@string/AddressPhone" />
+
+            <EditText
+                android:id="@+id/AddressPhone"
+                style="@style/AddressAddItemContent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="@string/HintPhone"
+                android:inputType="phone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/AddressAddItemTitle"
+                android:layout_height="wrap_content"
+                android:text="@string/AddressProvince" />
+
+            <TextView
+                android:id="@+id/AddressProvince"
+                style="@style/AddressAddItemContent"
+                android:layout_height="wrap_content"
+                android:hint="@string/HintProince" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:background="#ffffff"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/AddressAddItemTitle"
+                android:layout_height="wrap_content"
+                android:text="@string/AddressCity" />
+
+            <TextView
+                android:id="@+id/AddressCity"
+                style="@style/AddressAddItemContent"
+                android:layout_height="wrap_content"
+                android:hint="@string/HintCity" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:background="#ffffff"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/AddressAddItemTitle"
+                android:layout_height="wrap_content"
+                android:text="@string/AddressDistrice" />
+
+            <TextView
+                android:id="@+id/AddressDistrict"
+                style="@style/AddressAddItemContent"
+                android:layout_height="wrap_content"
+                android:hint="@string/HintDistrict" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:background="#ffffff"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/AddressAddItemTitle"
+                android:layout_height="wrap_content"
+                android:text="@string/AddressPostCode" />
+
+            <EditText
+                android:id="@+id/AddressPostcode"
+                style="@style/AddressAddItemContent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:singleLine="true"
+                android:inputType="number"
+                android:hint="@string/HintPostcode" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:background="#ffffff"
+            android:gravity="top"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/AddressAddItemTitle"
+                android:layout_height="wrap_content"
+                android:text="@string/AddressStreet" />
+
+            <EditText
+                android:id="@+id/AddressStreet"
+                style="@style/AddressAddItemContent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="@string/HintStreet"
+                android:lines="5" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

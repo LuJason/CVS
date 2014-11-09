@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:background="@color/TabBackgroundNormal" >
+
+        <TextView
+            android:id="@+id/titileA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/TabTextWhite"
+            android:text="@string/CountOfGoods" />
+
+        <TextView
+            android:id="@+id/CountOfGoods"
+            android:layout_toRightOf="@+id/titileA"
+            android:textColor="@color/TabTextWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3" />
+
+        <TextView
+            android:id="@+id/titileB"
+            android:layout_toLeftOf="@+id/TotalAmountDue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/TabTextWhite"
+            android:text="@string/TotalAmountDue" />
+
+        <TextView
+            android:id="@+id/TotalAmountDue"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           	android:textColor="@color/TabTextRed"
+            android:text="82.6元" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/GoodsList"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:scrollbars="none" />
+
+    <Button
+        android:id="@+id/GoToSettleAccount"
+        style="@style/BaseButton"
+        android:layout_margin="5dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/GoToSettlement" />
+    
+    
+    
+
+</LinearLayout>

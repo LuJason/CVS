@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <CheckBox
+        android:id="@+id/GoodSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="4dip"
+        android:src="@drawable/dustbin" />
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="4dip" >
+
+        <ImageView
+            android:id="@+id/GoodImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/GoodImg"
+            android:orientation="vertical"
+            android:padding="3dip" >
+
+            <TextView
+                android:id="@+id/GoodTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:padding="3dip"
+                android:singleLine="true"
+                android:text="货物标题"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/GoodUnitPirce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dip"
+                android:text="123.6元"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="3dip" >
+
+                <TextView
+                    android:id="@+id/GoodQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/good_quantity_background"
+                    android:gravity="center"
+                    android:minWidth="35dip"
+                    android:orientation="horizontal"
+                    android:padding="3dip"
+                    android:text="10"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/GoodDelete"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:src="@drawable/dustbin_over" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
